@@ -1,7 +1,6 @@
 import { formats as vegaFormats } from "vega-loader";
 import { html, nothing, render } from "lit";
 import { styleMap } from "lit/directives/style-map.js";
-import SPINNER from "./img/90-ring-with-bg.svg";
 
 import css from "./styles/genome-spy.css.js";
 import Tooltip from "./utils/ui/tooltip.js";
@@ -274,10 +273,7 @@ export default class GenomeSpy {
                                           ? html`: ${status.detail}`
                                           : nothing}</span
                                   >`
-                                : html`
-                                      <img src="${SPINNER}" alt="" />
-                                      <span>Loading...</span>
-                                  `}
+                                : html` <span>Loading...</span> `}
                         </div>
                     </div>`
                 );

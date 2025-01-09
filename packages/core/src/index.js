@@ -2,10 +2,8 @@ import { isObject, isString } from "vega-util";
 import { html } from "lit";
 
 import GenomeSpy from "./genomeSpy.js";
-import icon from "./img/bowtie.svg";
-import favIcon from "./img/genomespy-favicon.svg";
 
-export { GenomeSpy, html, icon, favIcon };
+export { GenomeSpy, html };
 
 /**
  * Embeds GenomeSpy into the DOM

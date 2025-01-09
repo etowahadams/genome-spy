@@ -1,8 +1,6 @@
 import { InternMap } from "internmap";
 import { createTexture } from "twgl.js";
 import { isString } from "vega-util";
-import latoRegular from "../fonts/Lato-Regular.json";
-import latoRegularBitmap from "../fonts/Lato-Regular.png";
 import getMetrics from "./bmFontMetrics.js";
 
 const WEIGHTS = {
@@ -66,12 +64,12 @@ export default class BmFontManager {
          * A default/fallback font to be used when font loading fails
          * @type {FontEntry}
          */
-        this._defaultFontEntry = {
-            metrics: getMetrics(latoRegular),
-            texture: webGLHelper
-                ? this._createTextureNow(latoRegularBitmap)
-                : undefined,
-        };
+        // this._defaultFontEntry = {
+        //     metrics: getMetrics(latoRegular),
+        //     texture: webGLHelper
+        //         ? this._createTextureNow(latoRegularBitmap)
+        //         : undefined,
+        // };
     }
 
     async waitUntilReady() {
@@ -136,8 +134,8 @@ export default class BmFontManager {
                 `Cannot load font: "${key.family}". Using the embedded default font.`
             );
 
-            fontEntry.metrics = this._defaultFontEntry.metrics;
-            fontEntry.texture = this._defaultFontEntry.texture;
+            // fontEntry.metrics = this._defaultFontEntry.metrics;
+            // fontEntry.texture = this._defaultFontEntry.texture;
         }
     }
 
@@ -200,7 +198,7 @@ export default class BmFontManager {
     }
 
     getDefaultFont() {
-        return this._defaultFontEntry;
+        return this.getFont("lato");
     }
 
     /**
