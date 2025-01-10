@@ -1,3 +1,4 @@
+const VERTEX_SHADER = `
 out vec4 vColor;
 
 /** Stroke width */
@@ -202,3 +203,6 @@ void main(void) {
 
     setupPicking();
 }
+
+`;
+export default VERTEX_SHADER;

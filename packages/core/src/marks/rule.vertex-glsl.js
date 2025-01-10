@@ -1,3 +1,4 @@
+const VERTEX_SHADER = `
 // Line caps
 const int BUTT = 0;
 const int SQUARE = 1;
@@ -81,3 +82,6 @@ void main(void) {
     
     setupPicking();
 }
+
+`;
+export default VERTEX_SHADER;

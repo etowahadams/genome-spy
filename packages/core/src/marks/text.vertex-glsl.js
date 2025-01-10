@@ -1,3 +1,4 @@
+const VERTEX_SHADER = `
 in mediump vec2 vertexCoord;
 in lowp vec2 textureCoord;
 
@@ -227,3 +228,6 @@ void main(void) {
 
     setupPicking();
 }
+
+`;
+export default VERTEX_SHADER;

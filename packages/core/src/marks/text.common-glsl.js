@@ -1,3 +1,4 @@
+const COMMON_SHADER = `
 layout(std140) uniform Mark {
     uniform mediump float uSdfNumerator;
 
@@ -20,3 +21,6 @@ layout(std140) uniform Mark {
 
 #pragma markUniforms
 };
+
+`;
+export default COMMON_SHADER;

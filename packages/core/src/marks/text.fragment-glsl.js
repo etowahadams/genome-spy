@@ -1,3 +1,4 @@
+const FRAGMENT_SHADER = `
 uniform sampler2D uTexture;
 
 in vec2 vTexCoord;
@@ -39,3 +40,6 @@ void main() {
         fragColor = vPickingColor;
     }
 }
+
+`;
+export default FRAGMENT_SHADER;

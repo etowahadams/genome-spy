@@ -1,3 +1,4 @@
+const COMMON_SHADER = `
 layout(std140) uniform Mark {
     /** Minimum size (width, height) of the displayed rectangle in pixels */
     uniform float uMinWidth;
@@ -13,3 +14,6 @@ layout(std140) uniform Mark {
 
 #pragma markUniforms
 };
+
+`;
+export default COMMON_SHADER;

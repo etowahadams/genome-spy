@@ -1,7 +1,7 @@
 import { drawBufferInfo, setBuffersAndAttributes } from "twgl.js";
-import VERTEX_SHADER from "./rect.vertex.glsl";
-import FRAGMENT_SHADER from "./rect.fragment.glsl";
-import COMMON_SHADER from "./rect.common.glsl";
+import VERTEX_SHADER from "./rect.vertex-glsl.js";
+import FRAGMENT_SHADER from "./rect.fragment-glsl.js";
+import COMMON_SHADER from "./rect.common-glsl.js";
 import { RectVertexBuilder } from "../gl/dataToVertices.js";
 
 import Mark from "./mark.js";

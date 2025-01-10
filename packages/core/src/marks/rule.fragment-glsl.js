@@ -1,3 +1,4 @@
+const FRAGMENT_SHADER = `
 // Line ending
 const int BUTT = 0;
 const int SQUARE = 1;
@@ -47,3 +48,6 @@ void main(void) {
         fragColor = vPickingColor;
     }
 }
+
+`;
+export default FRAGMENT_SHADER;

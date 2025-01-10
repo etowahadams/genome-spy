@@ -1,3 +1,4 @@
+const COMMON_SHADER = `
 layout(std140) uniform Mark {
     /** Minimum rule length in pixels */
     uniform mediump float uMinLength;
@@ -8,3 +9,6 @@ layout(std140) uniform Mark {
 
 #pragma markUniforms
 };
+
+`;
+export default COMMON_SHADER;

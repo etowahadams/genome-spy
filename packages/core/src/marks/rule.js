@@ -6,9 +6,9 @@ import {
     setBuffersAndAttributes,
     setUniforms,
 } from "twgl.js";
-import VERTEX_SHADER from "./rule.vertex.glsl";
-import FRAGMENT_SHADER from "./rule.fragment.glsl";
-import COMMON_SHADER from "./rule.common.glsl";
+import VERTEX_SHADER from "./rule.vertex-glsl.js";
+import FRAGMENT_SHADER from "./rule.fragment-glsl.js";
+import COMMON_SHADER from "./rule.common-glsl.js";
 import { RuleVertexBuilder } from "../gl/dataToVertices.js";
 import { isChannelDefWithScale } from "../encoder/encoder.js";
 

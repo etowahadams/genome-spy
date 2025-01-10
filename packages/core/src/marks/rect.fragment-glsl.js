@@ -1,3 +1,4 @@
+const FRAGMENT_SHADER = `
 #if defined(ROUNDED_CORNERS) || defined(STROKED)
 in vec2 vPosInPixels;
 #endif
@@ -49,3 +50,6 @@ void main(void) {
         fragColor = vPickingColor;
     }
 }
+
+`;
+export default FRAGMENT_SHADER;

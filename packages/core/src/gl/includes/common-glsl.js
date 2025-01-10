@@ -1,4 +1,4 @@
-#define PI 3.141593
+const GLSL_COMMON = `#define PI 3.141593
 
 uniform View {
     /** Offset in "unit" units */
@@ -103,3 +103,6 @@ vec4 distanceToColor(float d, vec4 fill, vec4 stroke, float halfStrokeWidth) {
         return fill * distanceToRatio(-d);
     }
 }
+`;
+
+export default GLSL_COMMON;

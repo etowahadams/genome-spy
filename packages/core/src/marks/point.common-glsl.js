@@ -1,3 +1,4 @@
+const COMMON_SHADER = `
 layout(std140) uniform Mark {
     /**
     * The stroke should only grow inwards, e.g, the diameter/outline is not affected by the stroke width.
@@ -19,3 +20,6 @@ layout(std140) uniform Mark {
 
 #pragma markUniforms
 };
+
+`;
+export default COMMON_SHADER;

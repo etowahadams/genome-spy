@@ -1,3 +1,4 @@
+const VERTEX_SHADER = `
 out lowp vec4 vFillColor;
 out lowp vec4 vStrokeColor;
 out float vHalfStrokeWidth;
@@ -117,3 +118,6 @@ void main(void) {
 
     setupPicking();
 }
+
+`;
+export default VERTEX_SHADER;

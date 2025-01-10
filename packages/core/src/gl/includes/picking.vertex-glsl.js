@@ -1,3 +1,4 @@
+const GLSL_PICKING_VERTEX = `
 /*
  * Based on concepts presented at:
  * https://webglfundamentals.org/webgl/lessons/webgl-picking.html
@@ -24,3 +25,6 @@ bool setupPicking() {
     }
     return false;
 }
+`;
+
+export default GLSL_PICKING_VERTEX;

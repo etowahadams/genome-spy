@@ -36,11 +36,11 @@ import {
     ATTRIBUTE_PREFIX,
     SELECTION_CHECKER_PREFIX,
 } from "../gl/glslScaleGenerator.js";
-import GLSL_COMMON from "../gl/includes/common.glsl";
-import GLSL_SCALES from "../gl/includes/scales.glsl";
-import GLSL_SAMPLE_FACET from "../gl/includes/sampleFacet.glsl";
-import GLSL_PICKING_VERTEX from "../gl/includes/picking.vertex.glsl";
-import GLSL_PICKING_FRAGMENT from "../gl/includes/picking.fragment.glsl";
+import GLSL_COMMON from "../gl/includes/common-glsl.js";
+import GLSL_SCALES from "../gl/includes/scales-glsl.js";
+import GLSL_SAMPLE_FACET from "../gl/includes/sampleFacet-glsl.js";
+import GLSL_PICKING_VERTEX from "../gl/includes/picking.vertex-glsl.js";
+import GLSL_PICKING_FRAGMENT from "../gl/includes/picking.fragment-glsl.js";
 import { getCachedOrCall } from "../utils/propertyCacher.js";
 import { createProgram } from "../gl/webGLHelper.js";
 import coalesceProperties from "../utils/propertyCoalescer.js";

@@ -1,3 +1,4 @@
+const COMMON_SHADER = `
 layout(std140) uniform Mark {
     uniform float uArcHeightFactor;
 
@@ -21,3 +22,6 @@ layout(std140) uniform Mark {
 
 #pragma markUniforms
 };
+
+`;
+export default COMMON_SHADER;

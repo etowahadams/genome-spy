@@ -1,3 +1,4 @@
+const FRAGMENT_SHADER = `
 in vec4 vColor;
 in float vSize;
 in float vNormalLengthInPixels;
@@ -19,3 +20,6 @@ void main(void) {
         fragColor = vPickingColor;
     }
 }
+
+`;
+export default FRAGMENT_SHADER;

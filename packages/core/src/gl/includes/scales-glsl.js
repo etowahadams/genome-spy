@@ -1,4 +1,4 @@
-uniform highp float uZero;
+const GLSL_SCALES = `uniform highp float uZero;
 
 // Utils ------------
 
@@ -167,3 +167,6 @@ float scaleBandHp(uvec2 value, vec3 domainExtent, vec2 range,
 
     return dot(vec4(start, hi, lo, bandwidth), vec4(1.0, step, step, band));
 }
+`;
+
+export default GLSL_SCALES;

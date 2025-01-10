@@ -1,3 +1,4 @@
+const VERTEX_SHADER = `
 out float vRadius;
 out float vRadiusWithPadding;
 out lowp vec4 vFillColor;
@@ -117,3 +118,6 @@ void main(void) {
 
     setupPicking();
 }
+
+`;
+export default VERTEX_SHADER;

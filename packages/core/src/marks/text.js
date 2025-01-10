@@ -6,9 +6,9 @@ import {
     setBuffersAndAttributes,
     setUniforms,
 } from "twgl.js";
-import VERTEX_SHADER from "./text.vertex.glsl";
-import FRAGMENT_SHADER from "./text.fragment.glsl";
-import COMMON_SHADER from "./text.common.glsl";
+import VERTEX_SHADER from "./text.vertex-glsl.js";
+import FRAGMENT_SHADER from "./text.fragment-glsl.js";
+import COMMON_SHADER from "./text.common-glsl.js";
 import { TextVertexBuilder } from "../gl/dataToVertices.js";
 
 import Mark from "./mark.js";

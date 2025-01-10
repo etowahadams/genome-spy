@@ -1,4 +1,4 @@
-
+const GLSL_SAMPLE_FACET = `
 /**
  * Describes where a sample facet should be shown. Interpolating between the
  * current and target positions/heights allows for transitioning between facet
@@ -105,3 +105,6 @@ float getSampleFacetHeight(vec2 pos) {
         return facetPos.height;
     }
 }
+`;
+
+export default GLSL_SAMPLE_FACET;
