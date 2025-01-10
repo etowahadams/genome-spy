@@ -7,7 +7,7 @@ import {
     faIndent,
 } from "@fortawesome/free-solid-svg-icons";
 import favIcon from "@genome-spy/core/img/genomespy-favicon.svg";
-import { embed, icon as genomeSpyIcon } from "@genome-spy/core";
+import { embed } from "@genome-spy/core";
 import { debounce } from "@genome-spy/core/utils/debounce.js";
 import defaultSpec from "./defaultspec.json?raw";
 
@@ -172,7 +172,6 @@ const toolbarTemplate = () => html`
             target="_blank"
             class="genome-spy-icon"
         >
-            <img title="GenomeSpy" alt="GenomeSpy" src="${genomeSpyIcon}" />
         </a>
         <span class="title">
             <span>GenomeSpy Playground</span>
