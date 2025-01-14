@@ -513,6 +513,10 @@ export class TextVertexBuilder extends GeometryBuilder {
         const align = this.properties.align || "left";
         const logoLetters = this.properties.logoLetters ?? false;
 
+        if (!this.metadata) {
+            return;
+        }
+
         const base = this.metadata.common.base;
         const scale = this.metadata.common.scaleH; // Assume square textures
 
